@@ -626,7 +626,7 @@ endif
 
 quiet_cmd_link_multi-m = LD [M]  $@
 
-ifdef CONFIG_LTO_CLANG
+ifdef ($(CONFIG_LTO_CLANG)$(CONFIG_LTO_GCC),)
   # don't compile IR until needed
   cmd_link_multi-m = $(cmd_link_multi-y)
 else
