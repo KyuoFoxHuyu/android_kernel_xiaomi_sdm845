@@ -862,7 +862,11 @@ KBUILD_CFLAGS += $(call cc-disable-warning, unused-but-set-variable)
 endif
 
 ifeq ($(ld-name),lld)
+ifeq ($(cc-name),clang)
 KBUILD_LDFLAGS += --lto-O3
+else
+KBUILD_LDFLAGS += -O3
+endif
 endif
 
 KBUILD_CFLAGS += $(call cc-disable-warning, unused-const-variable)
