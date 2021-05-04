@@ -558,17 +558,17 @@
 &msm_gpu {
 	/* Updated chip ID */
 	qcom,chipid = <0x06030001>;
-	qcom,initial-pwrlevel = <8>;
+	qcom,initial-pwrlevel = <9>;
 
 	qcom,gpu-pwrlevels {
 		#address-cells = <1>;
 		#size-cells = <0>;
 
 		compatible = "qcom,gpu-pwrlevels";
-
+		
 		qcom,gpu-pwrlevel@0 {
 			reg = <0>;
-			qcom,gpu-freq = <810000000>;
+			qcom,gpu-freq = <888000000>;
 			qcom,bus-freq = <12>;
 			qcom,bus-min = <12>;
 			qcom,bus-max = <12>;
@@ -576,7 +576,7 @@
 
 		qcom,gpu-pwrlevel@1 {
 			reg = <1>;
-			qcom,gpu-freq = <710000000>;
+			qcom,gpu-freq = <810000000>;
 			qcom,bus-freq = <12>;
 			qcom,bus-min = <12>;
 			qcom,bus-max = <12>;
@@ -584,7 +584,7 @@
 
 		qcom,gpu-pwrlevel@2 {
 			reg = <2>;
-			qcom,gpu-freq = <675000000>;
+			qcom,gpu-freq = <710000000>;
 			qcom,bus-freq = <12>;
 			qcom,bus-min = <10>;
 			qcom,bus-max = <12>;
